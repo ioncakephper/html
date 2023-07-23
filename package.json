@@ -1,5 +1,5 @@
 {
-  "name": "html",
+  "name": "html-tags",
   "version": "1.0.0",
   "description": "Build HTML tags programmatically in JavaScript scripts.",
   "main": "index.js",
