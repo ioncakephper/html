@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest --watchAll"
   },
-  "author": "",
+  "author": "Ion Gireada shytiger@yahoo.com",
   "license": "ISC",
   "dependencies": {
     "lodash": "^4.17.21"
