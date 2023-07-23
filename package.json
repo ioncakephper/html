@@ -6,6 +6,21 @@
   "scripts": {
     "test": "jest --watchAll"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ioncakephper/html-tags-builder.git"
+  },
+  "keywords": [
+    "html",
+    "tags",
+    "builder",
+    "javascript",
+    "build"
+  ],
+  "bugs": {
+    "url": "https://github.com/ioncakephper/html-tags-builder/issues"
+  },
+  "homepage": "https://github.com/ioncakephper/html-tags-builder#readme",
   "author": "Ion Gireada shytiger@yahoo.com",
   "license": "ISC",
   "dependencies": {

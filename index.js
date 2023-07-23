@@ -30,7 +30,6 @@ function tag(tagName, content = '', options = {}) {
         return `${startTag(tagName, options)} />`;
     }
     return `${startTag(tagName, options)}>${content}</${tagName}>`;
-
 }
 
 /**
@@ -38,8 +37,8 @@ function tag(tagName, content = '', options = {}) {
  * @param tagName - The `tagName` parameter is a string that represents the name of the HTML tag that
  * you want to create. For example, if you want to create a `<div>` tag, you would pass the string
  * "div" as the `tagName` parameter.
- * @param options - The `options` parameter is an object that contains the attributes and their values
- * for the HTML tag.
+ * @param options - The `options` parameter is either a string, an array, or an object that contains the attributes and their values
+ * for the HTML tag. When options is a string, the options is returned. When options is an array, this function returns the array joined with a space. When options is an object, uses the object's key-value pairs as the attributes for the HTML tag.
  * @returns a string that represents the start tag of an HTML element.
  */
 function startTag(tagName, options) {
@@ -149,9 +148,12 @@ function a(content, url, options = {}) {
 /**
  * The `gridHeaders` function takes an array of headers and a URL string, and returns an array of
  * modified headers with sorting functionality.
- * @param [headers] - An array of objects representing the headers of a grid. Each object should have
+ * @param [headers] - An array of strings or objects representing the headers of a grid. Each object should have
  * the following properties:
- * @param [urlString] - The `urlString` parameter is a string that represents a URL. It is used to
+ * - `text` - The `text` property is a string that represents the header's text.
+ * - `data?` - The optional `data` property represents the header's data.
+ * - `sort?` - The optional `sort` property is a string that represents the header's sorting option. When there is no sort option for a header object, the header returns the header.text. If header.text is empty, hand.data is used or an empty string.
+  * @param [urlString] - The `urlString` parameter is a string that represents a URL. It is used to
  * parse the query parameters from the URL and modify them based on the sorting options provided in the
  * `headers` array.
  * @returns The function `gridHeaders` returns an array of modified headers.
