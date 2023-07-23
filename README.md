@@ -1,17 +1,17 @@
-# html
+# html-tags
 
 Build HTML tags programmatically in JavaScript scripts.
 
 ## Installation
 
 ```bash
-npm install html --save
+npm install html-tags --save
 ```
 
 ## Usage
 
 ```js
-const {tag} = require('html');
+const {tag} = require('html-tags');
 
 // Empty tag
 let p = tag('p'); // An empty p tag
@@ -53,7 +53,7 @@ console.log(ul);
 The `html` module provides the `table` function to build the HTML code for a table with headers, rows, and options
 
 ```js
-const {tag, table} = require('html');
+const {tag, table} = require('html-tags');
 
 let heeders = ['ID', 'Name'];
 let rows [
@@ -71,7 +71,7 @@ console.log(t);
 The `a` function creates the html code for the `<a>` tag, providing arguments for content and url.
 
 ```js
-const {a} = require('html');
+const {a} = require('html-tags');
 
 let linkTo = a('Company', 'http://company/com');
 console.log(linkTo);
