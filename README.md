@@ -50,10 +50,10 @@ console.log(ul);
 
 ## Table function
 
-The `html` module provides the `table` function to build the HTML code for a table with headers, rows, and options
+This module provides the `table` function to build the HTML code for a table with headers, rows, and options
 
 ```js
-const {tag, table} = require('html-tags-builder');
+const {table} = require('html-tags-builder');
 
 let headers = ['ID', 'Name'];
 let rows [
