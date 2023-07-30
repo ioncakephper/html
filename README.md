@@ -55,7 +55,7 @@ The `html` module provides the `table` function to build the HTML code for a tab
 ```js
 const {tag, table} = require('html-tags-builder');
 
-let heeders = ['ID', 'Name'];
+let headers = ['ID', 'Name'];
 let rows [
     ['1', 'Dale Cooper'],
     ['2', 'Mary Poppins']
