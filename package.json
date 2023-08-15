@@ -4,7 +4,7 @@
   "description": "Build HTML tags programmatically in JavaScript scripts.",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watchAll"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
