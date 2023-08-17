@@ -58,4 +58,35 @@ describe('table', () => {
 })
 
 
-    
+describe('gridHeaders', () => {
+
+    describe('Only headers, no url string', () => {
+
+        test(`No headers, no url string`, () => {
+            expect(gridHeaders()).toEqual([]);
+        });
+
+        test('Single header in the array, header item is string, no url string', () => {
+            expect(gridHeaders(['hello'])).toEqual(['hello']);
+        });
+
+        test('Single header in the array, header item is object with text property, no url string', () => {
+            expect(gridHeaders([{ text: 'hello' }])).toEqual(['hello']);
+        })
+
+        test('Single header in the array, header item is object with text property as empty string, no url string', () => {
+            expect(gridHeaders([{ text: '      ' }])).toEqual(['']);
+        })
+
+        test('Single header in the array, header item is an empty object, no url string', () => {
+            expect(gridHeaders([{}])).toEqual(['']);
+        })
+
+    })
+
+
+    describe('Headers and url string', () => {
+        test.todo('')
+    })
+
+})

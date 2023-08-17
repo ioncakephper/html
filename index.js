@@ -167,13 +167,14 @@ function gridHeaders(headers = [], urlString = '') {
     }
     return headers.map(header => {
         if (isString(header)) {
-            return header;
+            return header.trim();
         }
   
         if (!header.data) {
-            return header.text || header.data || ''
+            return (header.text || header.data || '').trim()
         }
         header.text = header.text || header.data;
+        header.text = header.text.trim();
         if (!header.sort) {
             return header.text;
         }
