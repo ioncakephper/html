@@ -78,6 +78,10 @@ console.log(linkTo);
 // <a href="http://company.com">Company</a>
 ```
 
+## API
+
+Read the [html-tag-builder API](api.md) 
+
 ## LICENSE
 
 Creative Commons Legal Code
