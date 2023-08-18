@@ -78,9 +78,38 @@ console.log(linkTo);
 // <a href="http://company.com">Company</a>
 ```
 
+## gridHeaders function
+
+The `gridHeaders` function builds items to use in `thead > tr > th`.
+
+The `gridHeaders` function takes an array of headers and a URL string, and returns an array of modified headers with sorting functionality.
+
+```js
+const {gridHeaders} = require('html-tags-builder');
+
+let headerDefs = [
+    // Show a link with ID as text. When clicked, the link will sort on id field or switch the sort direction.
+    {
+        data: 'id',
+        text: 'ID',
+        sort: 'asc'
+    },
+
+    // Show  text Description in the table header. No link is generated.
+    {
+        data: 'description',
+        text: 'Description'
+    },
+
+    // Show text Operations in the table header. No link is generated.
+    'Operations'
+
+]
+```
+
 ## API
 
-Read the [html-tag-builder API](api.md) 
+Read the [html-tag-builder API](api.md)
 
 ## LICENSE
 
