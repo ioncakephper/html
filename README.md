@@ -105,6 +105,13 @@ let headerDefs = [
     'Operations'
 
 ]
+
+let urlString = 'https://company.com';
+let headers = gridHeaders(headerDefs, urlString)
+
+console.log(JSON.stringify(headers, null, 2));
+
+// ["<a href="https://company.com/sb=id&sd=asc">ID</a>", "Description", "Operations"]
 ```
 
 ## API
